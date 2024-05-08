@@ -1,7 +1,7 @@
 body{
   front-family: sans-serif;
   margin: 0;
-
+  
 }
 
 a{
@@ -12,7 +12,7 @@ a{
 header{
   display: flex;
   min-height: 70px;
-  background-color: #F7F0E8;
+  background-color: #f7f0e8ea;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
@@ -32,14 +32,38 @@ nav{
 }
 
 nav a {
-  font-weight: 600;
-  padding-right: 10px;
+  font-weight: 800;
+  padding-right: 50px;
 }
 
 nav a:hover{
   color: #A60000;
 }
 
+.principal{
+  height: 60vh;
+  background: url(img/tzintzuntzan-1.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+
+}
+
+.arriba {
+  padding: 100px;
+  
+  
+}
+
+.medio {
+  padding: 80px;
+  background: #1F1D1D;
+}
+
+.ba {
+  padding: 100px;
+  
+}
 
 
 @media (max-width:700px) {
