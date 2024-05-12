@@ -28,7 +28,7 @@ header{
   margin-right: 10px;
 }
 nav{
-  margin-right: 500px;
+  margin-right: 100px;
 }
 
 nav a {
@@ -40,8 +40,9 @@ nav a:hover{
   color: #A60000;
 }
 
-.principal{
-  height: 60vh;
+/* -----------------------CUERPO------------------------------------*/
+.contenido-principal{
+  height: 500vh;
   background: url(img/tzintzuntzan-1.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
@@ -49,21 +50,36 @@ nav a:hover{
 
 }
 
-.arriba {
+.contenido-arriba {
   padding: 100px;
+  text-align: center;
   
-  
+}
+.contenido-imagenes {
+  position: relative;
+  max-width: 100%; /* Ajusta el tamaño máximo del contenedor de imágenes */
+  overflow: hidden; /* Oculta las imágenes que se salgan del contenedor */
 }
 
-.medio {
-  padding: 80px;
-  background: #1F1D1D;
+.imagen {
+  display: block;
+  width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
+  height: auto; /* Ajusta la altura automáticamente */
+  opacity: 0; /* Oculta todas las imágenes al principio */
+  transition: opacity 0.5s ease; /* Transición suave de opacidad */
 }
 
-.ba {
+.contenido-medio {
   padding: 100px;
-  
+  background: #992f2f;
 }
+
+.contenido-medio h2,
+.contenido-medio p{
+  color: white;
+}
+
+
 
 
 @media (max-width:700px) {
