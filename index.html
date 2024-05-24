@@ -9,7 +9,7 @@
     <title>Rustimuebles</title>
 
     <link href="style.css" rel="stylesheet"/>
-    <script type="text/javascript" src="job.js " ></script>
+    
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
   </head>
@@ -35,18 +35,23 @@
     <!-- ================ CUERPO =============== -->
 
      <div class="contenido-principal">
-          <section class="contenido-arriba">
-          
-            <h2 class="title">Inicio</h2>
 
-            <div class="contenido-imagenes">
-              <img src="img/comedor1.jpg" alt="imagen1" class="imagen">
-              <img src="img/ropero1.jpeg" alt="imagen2" class="imagen">
-              <img src="img/sala1.jpg" alt="imagen3" class="imagen">
+      <section class="contenido-arriba">
+        <div class="carrusel" id="slider">
+            <div class="slider-seccion">
+                <img src="img/comedor1.jpg" alt="Comedor">
             </div>
-
-            
-          </section>
+            <div class="slider-seccion">
+                <img src="img/ropero1.jpeg" alt="Ropero">
+            </div>
+            <div class="slider-seccion">
+                <img src="img/sala1.jpg" alt="Sala">
+            </div>
+        </div>
+        <div class="boton-delante" id="boton-delante">&gt;</div>
+        <div class="boton-atras" id="boton-atras">&lt;</div>
+    </section>
+    
           <!-- ******************************************************** -->
           <section class="contenido-medio">
             <h2 class="title">Productos</h2>
@@ -97,7 +102,8 @@
 
 
     <!-- ////////////////////////////////////////////// -->
-
+    <script  src="job.js " ></script>
   </body>
+  
   
 </html>

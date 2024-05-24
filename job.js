@@ -1,26 +1,26 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const imagenes = document.querySelectorAll('.contenido-imagenes .imagen');
-    let index = 0; // Índice de la imagen actual
-    
-    function mostrarSiguienteImagen() {
-        // Oculta la imagen actual
-        imagenes[index].style.opacity = 0;
-        
-        // Calcula el índice de la siguiente imagen (cíclico)
-        index = (index + 1) % imagenes.length;
-        
-        // Muestra la siguiente imagen
-        imagenes[index].style.opacity = 1;
-        
-        // Programa la siguiente transición después de un intervalo
-        setTimeout(mostrarSiguienteImagen, 3000); // Cambia de imagen cada 3 segundos (3000 milisegundos)
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('slider');
+    const adelante = document.getElementById('boton-delante');
+    const atras = document.getElementById('boton-atras');
+    let seccionActual = 0;
+    const secciones = document.querySelectorAll('.slider-seccion');
+    const numeroSecciones = secciones.length;
+
+    adelante.addEventListener('click', () => {
+        seccionActual = (seccionActual + 1) % numeroSecciones;
+        actualizarCarrusel();
+    });
+
+    atras.addEventListener('click', () => {
+        seccionActual = (seccionActual - 1 + numeroSecciones) % numeroSecciones;
+        actualizarCarrusel();
+    });
+
+    function actualizarCarrusel() {
+        const desplazamiento = 0; // 100% es el ancho de cada imagen
+        secciones.forEach((seccion) => {
+            seccion.style.transform = `translateX(${desplazamiento}%)`;
+        });
     }
-    
-    // Muestra la primera imagen inicialmente
-    imagenes[index].style.opacity = 1;
-    
-    // Inicia el carrusel de imágenes
-    setTimeout(mostrarSiguienteImagen, 3000); // Comienza el carrusel después de 3 segundos (3000 milisegundos)
 });
-
-
