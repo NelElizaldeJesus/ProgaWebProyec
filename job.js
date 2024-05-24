@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function actualizarCarrusel() {
-        const desplazamiento = 0; // 100% es el ancho de cada imagen
+        const desplazamiento = -seccionActual * 100; // 100% es el ancho de cada imagen
         secciones.forEach((seccion) => {
             seccion.style.transform = `translateX(${desplazamiento}%)`;
         });
