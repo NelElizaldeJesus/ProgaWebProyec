@@ -43,7 +43,7 @@ nav a:hover{
 
 /* -----------------------CUERPO------------------------------------*/
 .contenido-principal {
-  height: 200vh;
+  height: auto;
   background: url('img/tzintzuntzan-1.jpg'); /* Reemplaza con la ruta a tu textura o patrón */
   background-attachment: fixed;
   background-size: cover; /* Ajusta según sea necesario */
@@ -117,11 +117,12 @@ nav a:hover{
 
 
 .contenido-medio {
-  text-align: center;
+  
   padding: 50px;
   
     background: #f7f0e8ea;
     justify-content: center;
+    margin: 50px 0;
 }
 
 .title {
